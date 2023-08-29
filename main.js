@@ -31,6 +31,7 @@ function reset(){
 createGrid(squareSize)
 
 
+
 function createDiv(size){
     const div = document.createElement("div")
     div.classList.add('box')
@@ -48,9 +49,29 @@ function createGrid(gridSize){
     }
 }
 
+
+
+let rainbow = false
+function switchToRainbow(){
+    if(!rainbow){
+        rainbow = true
+    }else{
+        rainbow = false
+    }
+}
+
+
+
 grid.addEventListener("mouseover", (e) => {
     if(e.target.classList.contains('box')){
-        e.target.classList.add('hovered')
+        let colors = ["red", "green", "blue", "yellow", "orange"]
+        const randomColor = Math.floor(Math.random() * colors.length)
+        if(rainbow){
+            e.target.style.backgroundColor = colors[randomColor]
+        }else{
+            e.target.style.backgroundColor = 'black'
+        }
+     
     }
 })
 
