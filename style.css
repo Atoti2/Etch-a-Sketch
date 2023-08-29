@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    border: 1px solid rgb(36, 33, 33);
+    border-radius: 8%;
+    background-color: rgb(109, 109, 109);
+}
+
+.grid{
+    height: 50rem;
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.hovered{
+    background-color: rgb(121, 94, 94);
+}
+
+.controls{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+button{
+    margin-top: 3px;
+    padding: 11px;
+    background-color: chocolate;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(192, 112, 54);
+}
