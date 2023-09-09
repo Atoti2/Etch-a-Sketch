@@ -8,11 +8,13 @@
 </head>
 <body>
     <main>
+        <h1>Etch-a-sketch</h1>
         <div class="container">
             <div class="controls">
                 <button onclick="reset()">Reset</button>
                 <button onclick="apply()">Apply</button>
                 <button onclick="switchToRainbow()">Toggle Rainbow</button>
+                <button onclick="switchToEraser()">Eraser</button>
                 <input onchange="changeSize(this)" type="range" name="size" id="size" min="8" max="64" step="2">
                 <p>16x16</p>
             </div>
